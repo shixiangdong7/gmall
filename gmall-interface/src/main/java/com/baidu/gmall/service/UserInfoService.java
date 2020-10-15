@@ -1,4 +1,4 @@
-package com.baidu.gmall;
+package com.baidu.gmall.service;
 
 
 

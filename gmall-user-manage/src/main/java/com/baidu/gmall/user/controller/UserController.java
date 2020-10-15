@@ -1,7 +1,7 @@
 package com.baidu.gmall.user.controller;
 
 
-import com.baidu.gmall.UserInfoService;
+import com.baidu.gmall.service.UserInfoService;
 import com.baidu.gmall.bean.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

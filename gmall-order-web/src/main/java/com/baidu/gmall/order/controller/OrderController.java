@@ -2,9 +2,8 @@ package com.baidu.gmall.order.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.baidu.gmall.UserInfoService;
+import com.baidu.gmall.service.UserInfoService;
 import com.baidu.gmall.bean.UserAddress;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;

@@ -2,7 +2,7 @@ package com.baidu.gmall.user.service.impl;
 
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.baidu.gmall.UserInfoService;
+import com.baidu.gmall.service.UserInfoService;
 import com.baidu.gmall.bean.UserAddress;
 import com.baidu.gmall.bean.UserInfo;
 import com.baidu.gmall.user.mapper.UserAddressMapper;
