@@ -53,4 +53,14 @@ public class ManageController {
     public void saveAttrInfo(@RequestBody BaseAttrInfo baseAttrInfo) {
         manageService.saveAttrInfo(baseAttrInfo);
     }
+
+    @RequestMapping("spuList")
+    @ResponseBody
+    public List<SpuInfo> spuList(String catalog3Id){
+        SpuInfo spuInfo = new SpuInfo();
+        spuInfo.setCatalog3Id(catalog3Id);
+        List<SpuInfo> spuInfoList = manageService.getSpuInfoList(spuInfo);
+        return  spuInfoList;
+    }
+
 }

@@ -55,4 +55,9 @@ public interface ManageService {
      * @return
      */
     BaseAttrInfo getAttrInfo(String attrId);
+
+    List<SpuInfo> getSpuInfoList(SpuInfo spuInfo);
+
+    // 查询基本销售属性表
+    List<BaseSaleAttr> getBaseSaleAttrList();
 }
