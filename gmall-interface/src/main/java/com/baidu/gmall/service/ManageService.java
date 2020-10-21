@@ -60,4 +60,41 @@ public interface ManageService {
 
     // 查询基本销售属性表
     List<BaseSaleAttr> getBaseSaleAttrList();
+
+
+    /**
+     * 保存spuinfo
+     * @param spuInfo
+     */
+    void saveSpuInfu(SpuInfo spuInfo);
+
+    /**
+     * 通过spuimage属性查找spuimage集合
+     * @param spuImage
+     * @return
+     */
+    List<SpuImage> getSpuImageList(SpuImage spuImage);
+
+    /**
+     * 根据spuid查询销售属性集合
+     * @param spuId
+     * @return
+     */
+    List<SpuSaleAttr> getSpuSaleAttrList(String spuId);
+
+    public void saveSkuInfo(SkuInfo skuInfo);
+
+    /**
+     * 根据skuid查询skuinfo
+     * @param skuId
+     * @return
+     */
+    SkuInfo getSkuInfo(String skuId);
+
+
+    List<SkuImage> getSkuImageBySkuId(String skuId);
+
+    List<SpuSaleAttr> getSpuSaleAttrListCheckBySku(SkuInfo skuInfo);
+
+    List<SkuSaleAttrValue> getSkuSaleAttrValueListBySpu(String spuId);
 }
